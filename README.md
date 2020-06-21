@@ -1,5 +1,5 @@
 # Properties translator
-Translates java properties to specified language using google translator. It can also convert the received translation to Unicode.
+Translates Java properties into the specified language using Google Translate API. It can also convert the received translation to Unicode.
 
 ## Usage
 
