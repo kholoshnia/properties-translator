@@ -41,7 +41,7 @@ NOTE:
     Replace string format characters after google translate (\'% s\' -> \' %s\')? [y/n]: <y/any charachter>
     ```
 
-5. Program will encode property value before saving to the file
+5. Program will encode property value before saving to the file.
     ```
     Encode? [y/n]: <y/any charachter>
     ```
@@ -50,7 +50,7 @@ NOTE:
     ```
     Use unicode-escape? [y/n]: <y/any charachter>
     ```
-    > This encoding does not affect frequent characters as well as English but it will use as less data as possible (e.g. \x80 instead of \u0080 or \U00000080)
+    > This encoding does not affect frequent characters as well as English but it will use as less data as possible (e.g. \x80 instead of \u0080 or \U00000080).
 
 ## Results
 
