@@ -21,32 +21,32 @@ NOTE:
 
 ## Program input
 
-1. Input directory where your properties are located.
+1. Input directory where your properties are located:
     ```
     Input source properties file path: <path>
     ```
 
-2. Input language of the source file specified in the first step.
+2. Input language of the source file specified in the first step (e.g. en):
     ```
     Input source language: <language>
     ```
 
-3. Input languages that need to be received separated by space.
+3. Input languages that need to be received separated by space (e.g. en ru es_CR):
     ```
     Input destination languages: <languages>
     ```
 
-4. Program will replace "% s" -> " %s" after google translation as its doesn't translate it in a correct way.
+4. Program will replace "% s" -> " %s" after google translation as its doesn't translate it in a correct way:
     ```
     Replace string format characters after google translate (\'% s\' -> \' %s\')? [y/n]: <y/any charachter>
     ```
 
-5. Program will encode property value before saving to the file.
+5. Program will encode property value before saving to the file:
     ```
     Encode? [y/n]: <y/any charachter>
     ```
 
-6. If previous answer was y then one need to specify if the program has to use python unicode-escape encoding.
+6. If previous answer was y then one need to specify if the program has to use python unicode-escape encoding:
     ```
     Use unicode-escape? [y/n]: <y/any charachter>
     ```
