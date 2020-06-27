@@ -20,7 +20,7 @@ def process_file(file_name, source, destinations, translator, replace_format, do
             elif line == '\n':
                 new_line = '\n'
             else:
-                line = line.split('=')
+                line = line.split('=', 1)
                 new_line = line[0] + '= '
                 result = translator.translate(line[1], src=source, dest=destination).text
 
