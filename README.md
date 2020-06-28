@@ -11,7 +11,7 @@ pip install googletrans
 
 The program takes the path to the directory as input and stores the result in the same directory, so it can be used directly inside the Java project.
 
-## Notes
+## Note
 - Program needs internet connection in order to translate properties using Google Translate API.
 - The program will be applied to all files with the specified suffix of the source language in the name in the specified directory automatically.
 - Program won't translate any comments (#).
