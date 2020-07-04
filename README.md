@@ -20,25 +20,25 @@ The program takes the path to the directory as input and stores the result in th
 
 After starting the program one need to answer the following questions:
 
-1. Enter the source directory where the source properties files are located:
+1. Enter the source directory where the source properties files are located or properties file paths separated by commas:
    ```
-   Enter the source directory with the properties files: <directory>
+   Enter the source directory with the properties file or file paths separated by commas: <directory>
    ```
 
-2. Enter the source language or leave it blank for auto selection: (e.g. en):
+2. Enter the source languages separated by commas or leave it blank for auto selection: (e.g. en, es):
    ```
-   Enter the source language or leave it blank for auto selection: <language>
+   Enter the source languages separated by commas or leave it blank for auto selection: <language>
    ```
    > If the user left this field empty, each file in the directory will be processed. Otherwise, files containing the entered language suffix in the name will be selected as source files.
 
-3. Enter, separated by spaces, the languages to be received (e.g. en ru es_CR):
+3. Enter, separated by commas, the languages to be received (e.g. en ru, pt, en_NZ):
    ```
-   Enter destination languages: <languages>
+   Enter destination languages separated by commas: <languages>
    ```
    > If the language of the specified region is not found, translates into the language of the country.
 
    After the translation, the program also applies the following formatting to the results:
-   - Replaces "% s" with " %s".
+   - Replaces all string format special symbols such as "% s" with "% s".
    - Applies sentences capitalization in accordance with source value.
    - Adds missing points at the end of the sentences in accordance with source value.
    - Adds missing trailing spaces in accordance with source value.

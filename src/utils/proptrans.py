@@ -93,8 +93,8 @@ class Proptrans(object):
     def translate(self, value, src='auto', dest='en'):
         """
         Translates value of properties file line. Also keeps track of incorrect sentence capitalization after
-        translation and adds trailing spaces to the result in accordance with the source value. Replaces "% s" with
-        "% s".
+        translation and adds trailing spaces to the result in accordance with the source value. Also, replaces all
+        string format special symbols such as "% s" with "% s".
 
         :param value: value of properties file line
         :param src: source language
@@ -103,9 +103,14 @@ class Proptrans(object):
         """
 
         string = value.strip()
-        result = self.translator.translate(string, src=src, dest=dest)
+        result = self.translator.translate(string, src=src, dest=dest).text
 
-        result = result.text.strip().lower().replace('% s', ' %s')
+        result = result.strip().lower().replace('% d', ' %d')
+        result = result.strip().lower().replace('% s', ' %s')
+        result = result.strip().lower().replace('% f', ' %f')
+        result = result.strip().lower().replace('% x', ' %x')
+        result = result.strip().lower().replace('% c', ' %c')
+        result = result.strip().lower().replace('% o', ' %o')
 
         if string[0].isupper():
             result = result.capitalize()
